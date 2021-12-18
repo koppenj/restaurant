@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
 body {
-  background-image: url(../src/hotdog.jpg);
+  background-image: url(../src/boardwalkheader.jpg);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
   display: grid;
   place-items: center;
+  font-size: 20px;
 }
 h1 {
   font-family: 'Bowlby One SC', cursive;
@@ -33,7 +34,7 @@ div#nav {
 
 div#dataContainer {
 
-  background-color: cornsilk;
+  background-color: rgba(255, 248, 220, 0.527);
   border-radius: 20px;
   width: 50vw;
   height: 50vh;
