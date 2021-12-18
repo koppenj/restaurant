@@ -38,7 +38,6 @@ div#dataContainer {
   border-radius: 20px;
   width: 50vw;
   height: 50vh;
-  /* padding: 0px 10px; */
 }
 
 button.tabs {
@@ -70,22 +69,19 @@ p#tagline {
   font-style: italic;
   text-align: center;
 }
+
 p#about {
   text-indent: 2em;
-  padding: 0 5px;
-  margin: 0 10px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
 }
 
-section#brunch {
-  justify-content: center;
-  border: crimson solid 1px;
-  margin: 20px auto;
+h2#contactTitle {
+  text-align: center;
 }
 
-section#dinner {
-  justify-content: center;
-  border: blue solid 1px;
-  margin: 20px auto;
+p#contactInfo {
+  white-space: pre;
+  text-align: center;
 }

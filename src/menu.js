@@ -1,5 +1,3 @@
-import navTabs from ".";
-
 export function menuTab() {
   const menuList = document.createElement('ul');
     menuList.id = 'menuList';

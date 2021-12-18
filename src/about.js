@@ -1,5 +1,3 @@
-import navTabs from ".";
-
 export function aboutTab() {
   const about = document.createElement('p');
     about.setAttribute('id', 'about');
