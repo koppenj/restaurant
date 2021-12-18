@@ -34,5 +34,6 @@ export default function navTabs() {
   tabs.append(contactButton);
   container.appendChild(tabs);
   container.appendChild(dataContainer);
+  aboutTab();
 };
 navTabs();
