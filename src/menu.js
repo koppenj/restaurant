@@ -16,13 +16,11 @@ export function menuTab() {
   const menuItems = [appetizers,entrees, dessert];
 
   const dataContainer = document.getElementById('dataContainer');
-    dataContainer.replaceChildren();
-  navTabs();
 
   for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].classList.add('menuTitles');
     menuList.appendChild(menuItems[i]);
   }
-
+  dataContainer.replaceChildren();
   dataContainer.appendChild(menuList);
 }

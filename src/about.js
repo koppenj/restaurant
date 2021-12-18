@@ -16,7 +16,6 @@ export function aboutTab() {
 
   const dataContainer = document.getElementById('dataContainer');
   dataContainer.replaceChildren();
-  navTabs();
   dataContainer.appendChild(about);
   dataContainer.appendChild(tagline);
 }
