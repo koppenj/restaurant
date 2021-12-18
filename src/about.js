@@ -14,9 +14,9 @@ export function aboutTab() {
     contact.innerHTML = `Contact Us<br>Lorem ipsum dolor sit amet, no per quando graeco mollis, at ullum argumentum persequeris cum, cum mutat tibique ea. Per iriure adipisci referrentur id, at ferri tractatos abhorreant vis. Dicunt elaboraret vis ad. Usu alienum comprehensam eu, cum posse eruditi an, nam laboramus maiestatis eu.
       Pro ea probo omnis insolens. Dicant propriae efficiantur vis eu, est ea vide altera. Est quando tantas fastidii no. Has libris ocurreret ea, volumus tibique partiendo in vix. Ne gubergren liberavisse pri, his id sonet gloriatur, cum ex justo splendide. Antiopam partiendo ea mel.`
 
-  const container = document.getElementById('content');
-  container.replaceChildren();
+  const dataContainer = document.getElementById('dataContainer');
+  dataContainer.replaceChildren();
   navTabs();
-  container.appendChild(about);
-  container.appendChild(tagline);
+  dataContainer.appendChild(about);
+  dataContainer.appendChild(tagline);
 }

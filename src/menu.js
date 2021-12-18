@@ -15,8 +15,8 @@ export function menuTab() {
 
   const menuItems = [appetizers,entrees, dessert];
 
-  const container = document.getElementById('content');
-  container.replaceChildren();
+  const dataContainer = document.getElementById('dataContainer');
+    dataContainer.replaceChildren();
   navTabs();
 
   for (let i = 0; i < menuItems.length; i++) {
@@ -24,5 +24,5 @@ export function menuTab() {
     menuList.appendChild(menuItems[i]);
   }
 
-  container.appendChild(menuList);
+  dataContainer.appendChild(menuList);
 }

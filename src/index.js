@@ -6,6 +6,9 @@ import './style.css';
 const container = document.getElementById('content');
 
 export default function navTabs() {
+  const dataContainer = document.createElement('div');
+    dataContainer.id = 'dataContainer';
+
   const tabs = document.createElement('div');
     tabs.setAttribute('id', 'nav');
 
@@ -30,5 +33,6 @@ export default function navTabs() {
   tabs.append(menuButton);
   tabs.append(contactButton);
   container.appendChild(tabs);
+  container.appendChild(dataContainer);
 };
 navTabs();

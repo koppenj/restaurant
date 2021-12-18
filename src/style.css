@@ -2,6 +2,7 @@
 
 body {
   background-image: url(../src/hotdog.jpg);
+  background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
   display: grid;
@@ -23,11 +24,6 @@ h1 {
 div#content {
   display: flexbox;
   place-items: center;
-  background-color: cornsilk;
-  border-radius: 20px;
-  width: 50vw;
-  min-height: 50vh;
-  padding: 10px;
 }
 
 div#nav {
@@ -35,10 +31,19 @@ div#nav {
   margin: 0 auto;
 }
 
+div#dataContainer {
+
+  background-color: cornsilk;
+  border-radius: 20px;
+  width: 50vw;
+  height: 50vh;
+  /* padding: 0px 10px; */
+}
+
 button.tabs {
   display: block;
   width: 100%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 20px 20px;
   min-height: 2em;
   margin: 4px 2px;
   padding: 0;
@@ -53,6 +58,10 @@ button.tabs:hover, button.tabs:focus {
 button.tabs:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
+}
+
+button.tabs:active {
+  background-color: rgba(122, 126, 101, 0.605);
 }
 
 p#tagline {
