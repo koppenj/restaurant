@@ -21,22 +21,29 @@ const treats = [sundae, cheeseCake, iceCream];
 
 
 export function menuTab() {
+  const dataContainer = document.getElementById('dataContainer');
+  dataContainer.replaceChildren();
+
+  const drawList = (foodGroup, sectionDiv) => {
+    foodGroup.forEach(food =>  {
+      const itemHolder = document.createElement('div');
+        itemHolder.textContent = food.name;
+        sectionDiv.appendChild(itemHolder);
+    });
+  }
+
   const appetizers = document.createElement('div');
     appetizers.id = 'appetizers';
+    drawList(apps, appetizers);
 
   const entrees = document.createElement('div');
     entrees.id = 'entrees';
-
+    drawList(meals, entrees);
   const dessert = document.createElement('div');
     dessert.id = 'dessert';
+    drawList(treats, dessert);
 
-
-  const dataContainer = document.getElementById('dataContainer');
-  const foodWriter = (menuList) => {
-    for (let i = 0; i < menuList.length; i++) {
-      // for each food item in an array, append it to the correct section
-    }
-  }
-  dataContainer.replaceChildren();
-  dataContainer.appendChild(menuList);
+  dataContainer.appendChild(appetizers);
+  dataContainer.appendChild(entrees);
+  dataContainer.appendChild(dessert);
 }
