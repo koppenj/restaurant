@@ -87,3 +87,20 @@ p#contactInfo {
   white-space: pre;
   text-align: center;
 }
+
+div.foodList {
+  display: flex;
+  place-items: center;
+  margin: 0;
+  width: 100%;
+  padding-top: 5px;
+}
+
+p#foodDescription {
+  font-size: 12px;
+  text-align: center;
+}
+
+p#foodPrice {
+  text-align: right;
+}

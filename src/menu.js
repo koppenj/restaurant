@@ -28,19 +28,35 @@ export function menuTab() {
     foodGroup.forEach(food =>  {
       const itemHolder = document.createElement('div');
         itemHolder.textContent = food.name;
-        sectionDiv.appendChild(itemHolder);
+        itemHolder.classList.add('foodList')
+
+      const itemDesc = document.createElement('p');
+        itemDesc.textContent = food.description;
+        itemDesc.id = 'foodDescription';
+
+      const itemPrice = document.createElement('p');
+        itemPrice.textContent = food.price;
+        itemPrice.id = 'foodPrice';
+
+      sectionDiv.appendChild(itemHolder);
+      itemHolder.appendChild(itemDesc);
+      itemHolder.appendChild(itemPrice);
     });
   }
 
   const appetizers = document.createElement('div');
     appetizers.id = 'appetizers';
+    appetizers.textContent = 'Appetizers';
     drawList(apps, appetizers);
 
   const entrees = document.createElement('div');
     entrees.id = 'entrees';
+    entrees.textContent = 'Entrees';
     drawList(meals, entrees);
+
   const dessert = document.createElement('div');
     dessert.id = 'dessert';
+    dessert.textContent = 'dessert';
     drawList(treats, dessert);
 
   dataContainer.appendChild(appetizers);
