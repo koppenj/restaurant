@@ -1,7 +1,7 @@
 export function aboutTab() {
   const about = document.createElement('p');
     about.setAttribute('id', 'about');
-    about.innerHTML = `Welcome to the home of flavor. Whether you're looking for a quick bite for lunch, or a culinary experience like none other, Stoney's Coneys can deliver. Make sure to check out the menu while you're here.`;
+    about.innerHTML = `Welcome to the home of flavor<br>For 25 years, Stoney's Coneys has been a mainstay of the boardwalk community. Make sure to check out our specials<br> Hungry Yet?`;
 
   const tagline = document.createElement('p');
     tagline.setAttribute('id', 'tagline');

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
 body {
+  font-family: 'Bowlby One SC', cursive;
   background-image: url(../src/boardwalkheader.jpg);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: grid;
   place-items: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 h1 {
   font-family: 'Bowlby One SC', cursive;
@@ -36,8 +38,9 @@ div#dataContainer {
 
   background-color: rgba(255, 248, 220, 0.527);
   border-radius: 20px;
-  width: 50vw;
-  height: 50vh;
+  width: 75vw;
+  height: 100vh;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 button.tabs {
@@ -71,10 +74,9 @@ p#tagline {
 }
 
 p#about {
+  text-align: center;
   text-indent: 2em;
   padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 h2#contactTitle {

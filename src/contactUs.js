@@ -5,7 +5,7 @@ export function contactUsTab() {
   const contactForm = document.createElement('div');
     contactForm.id = 'contactDetails';
   const contactTitle = document.createElement('h2');
-    contactTitle.textContent = 'Want To Chat? Call or Visit Us!';
+    contactTitle.textContent = 'Want To Chat? Call or Visit!';
     contactTitle.id = 'contactTitle';
   const contactInfo = document.createElement('p');
     contactInfo.id = 'contactInfo';
