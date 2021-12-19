@@ -40,7 +40,7 @@ div#nav {
 
 div#dataContainer {
   overflow-y: auto;
-  background-color: rgba(255, 248, 220, 0.527);
+  background-color: rgba(255, 248, 220, 0.65);
   border-radius: 20px;
   width: 75vw;
   height: fit-content;
@@ -55,8 +55,10 @@ button.tabs {
   min-height: 2em;
   margin: 4px 2px;
   padding: 0;
-  font-size: medium;
-  font-style: bolder;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: large;
+  font-style: bold;
+  cursor: pointer;
 }
 
 button.tabs:hover, button.tabs:focus {
@@ -109,7 +111,7 @@ div.foodList {
 }
 
 p#foodDescription {
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
 }
 
