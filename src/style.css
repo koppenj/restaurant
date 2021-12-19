@@ -25,22 +25,27 @@ h1 {
 }
 
 div#content {
-  display: flexbox;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 div#nav {
   display:flex;
+  place-items: center;
+  flex-direction: row;
   margin: 0 auto;
+  width: 100%;
 }
 
 div#dataContainer {
-
+  overflow-y: auto;
   background-color: rgba(255, 248, 220, 0.527);
   border-radius: 20px;
   width: 75vw;
-  height: 100vh;
+  height: fit-content;
   font-size: clamp(1rem, 2vw, 2rem);
+  padding: 5px;
 }
 
 button.tabs {
@@ -88,8 +93,15 @@ p#contactInfo {
   text-align: center;
 }
 
+div.categories {
+  border: 1px solid black;
+  margin: 10px 10px 20px 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
 div.foodList {
-  display: flex;
+  display: flexbox;
   place-items: center;
   margin: 0;
   width: 100%;
@@ -97,7 +109,7 @@ div.foodList {
 }
 
 p#foodDescription {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
 }
 
