@@ -16,19 +16,19 @@ export default function navTabs() {
     aboutButton.classList.add('tabs');
     aboutButton.id = 'about';
     aboutButton.addEventListener('click', aboutTab);
-    aboutButton.textContent = 'About';
+    aboutButton.textContent = 'ABOUT';
 
   const menuButton = document.createElement('button');
     menuButton.classList.add('tabs');
     menuButton.id = 'menu';
     menuButton.addEventListener('click', menuTab);
-    menuButton.textContent = 'Menu';
+    menuButton.textContent = 'MENU';
 
   const contactButton = document.createElement('button');
     contactButton.classList.add('tabs');
     contactButton.id = 'contact';
     contactButton.addEventListener('click', contactUsTab);
-    contactButton.textContent = 'Contact Us';
+    contactButton.textContent = 'CONTACT US';
   tabs.append(aboutButton);
   tabs.append(menuButton);
   tabs.append(contactButton);
